@@ -35,6 +35,9 @@ h1{
 .pink {
   color: var(--english-lavender)
 }
+.dark-text {
+  color: var(--lighter-raisin-black)
+}
 
 .footer {
   bottom: 0;

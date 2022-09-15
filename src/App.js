@@ -6,6 +6,7 @@ import HeaderFooter from './components/Static/HeaderFooter';
 import Home from './components/Home/Home';
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
+import ContactMe from './components/ContactMe.js/ContactMe';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path='/aboutme' element={<AboutMe />} />
             <Route path='/projects' element={<Projects />} />
+            <Route path='/contactme' element={<ContactMe />} />
           </Route>
         </Routes>
       </HashRouter>

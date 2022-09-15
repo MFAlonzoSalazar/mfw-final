@@ -28,6 +28,9 @@ export default function Header() {
                         <Nav.Link >
                             <MyNavLink route="/projects" label="Projects"/> 
                         </Nav.Link>
+                        <Nav.Link>
+                            <MyNavLink route="/contactme" label="Contact Me"/>
+                        </Nav.Link>
                         <ResumeLink className="Links" href={process.env.PUBLIC_URL + '/files/FernandaBlaiseResume.pdf'} target="_blank">
                             Resume
                         </ResumeLink>                        
