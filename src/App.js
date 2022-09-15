@@ -6,8 +6,8 @@ import HeaderFooter from './components/Static/HeaderFooter';
 import Home from './components/Home/Home';
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
-import ContactMe from './components/ContactMe.js/ContactMe';
-import Success from './components/ContactMe.js/Success';
+import ContactMe from './components/ContactMe/ContactMe';
+import Success from './components/ContactMe/Success';
 
 function App() {
   return (
