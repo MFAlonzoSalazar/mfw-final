@@ -23,7 +23,7 @@ export default function ContactMe() {
         <input type='text' name='_honey' style={{display: 'none'}} />
         {/* disble captcha */}
         <input type='hidden' name='_captcha' value='false' />
-
+        {/* <input type="hidden" name='_next' value=''/> */}
         <Row className="g-2 py-2">
           <Col>
             <FloatingLabel controlId="floatingInputGrid" label="First Name">
