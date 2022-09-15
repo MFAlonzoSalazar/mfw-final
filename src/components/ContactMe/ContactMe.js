@@ -9,7 +9,6 @@ export default function ContactMe() {
       event.preventDefault();
       event.stopPropagation();
     }
-
     setValidated(true);
   };
   return (
@@ -22,7 +21,7 @@ export default function ContactMe() {
 
       <Form
         action="https://formsubmit.co/f7de386e0539d64d8a701246ca3da419"
-        method="Post"
+        method="POST"
         noValidate
         validated={validated}
         class="form-floating pb-5 dark-text"
@@ -58,7 +57,7 @@ export default function ContactMe() {
         </Row>
         <FloatingLabel
           controlId="floatingEmail"
-          label="Email address"
+          label="Your Email address"
           className="mb-3"
         >
           <Form.Control
@@ -74,7 +73,6 @@ export default function ContactMe() {
             name="Message"
             placeholder="Leave a message here"
             style={{ height: "200px" }}
-            required
           />
         </FloatingLabel>
         <StyledButton type="submit" className="mb-5">
