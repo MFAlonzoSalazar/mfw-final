@@ -15,7 +15,7 @@ export default function Footer() {
           <i className="bi bi-linkedin fs-4 pink"></i>
         </a>
       </div>
-      <div class="align-items-center mx-md-3 pink serious fw-bold">
+      <div class="align-items-center mx-md-3 pink serious intro fw-bold text-end">
         &copy; Fernanda Blaise 2022
       </div>
     </footer>
