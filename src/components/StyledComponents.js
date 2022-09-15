@@ -1,4 +1,4 @@
-import { Navbar } from "react-bootstrap"
+import { Card, Navbar } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
@@ -10,7 +10,9 @@ const themes = {
         border: '#B18188',
         hover: '#D6B1B6',
         headerText: '#2D2D34',
-        text: '#665158'
+        text: '#665158',
+        cardBg: '#D2A9AF',
+        shadow: '#785D64'
 
     },
     dark: {
@@ -19,7 +21,9 @@ const themes = {
         border: '#9E757C',
         hover: '#D6B1B6',
         headerText: '#403940',
-        text:'#EAD6D9'
+        text: '#EAD6D9',
+        cardBg: '#B18188',
+        shadow: '#000',
     }
 }
 
@@ -87,4 +91,33 @@ export const StyledText = styled.p`
     ${({theme: {theme}})=> `
         color:  ${themes[theme].text};
     `}
+`
+export const PinkText = styled.p`
+    ${({theme: {theme}})=> `
+        color:  ${themes[theme].contrast};
+    `}
+`
+export const StyledCard = styled(Card)`
+    ${({theme: {theme}})=> `
+        background-color: ${themes[theme].cardBg}; 
+        color:  ${themes[theme].text};
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 8px 10px 1px ${themes[theme].shadow};
+        }
+    `}
+`
+export const CardText = styled(Card.Text)`
+    ${({theme: {theme}})=> `
+    color:  ${themes[theme].headerText};
+    `}
+`
+export const CardTitle = styled(Card.Title)`
+    ${({theme: {theme}})=> `
+    color:  ${themes[theme].headerText};
+    `}
+`
+export const AppBackground = styled.div`
+    position: relative;
+    min-height: 100vh;
 `

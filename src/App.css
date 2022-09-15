@@ -28,6 +28,18 @@
 h1{
   color: var(--english-lavender);
 }
+.cover {
+  width: 100%;
+  object-fit: cover;
+}
+.pink {
+  color: var(--english-lavender)
+}
+
+.footer {
+  bottom: 0;
+  position: absolute;
+}
 
 @media (max-width: 768px) {
   .fer {
