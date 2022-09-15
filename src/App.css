@@ -14,6 +14,22 @@
   --white: #FFF;
 }
 
+.copyright {
+  display: block;
+}
+
+body {
+  font-family: "Handlee","Baskervville", sans-serif;
+}
+
+.serious {
+  font-family: 'Baskervville', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .Links{
   padding-top: 5px;
   padding-bottom: 5px;
@@ -23,6 +39,10 @@
 
 .bg-primary {
   background-color: var(--english-lavender) !important;
+}
+
+.border-4 {
+  border-color: var(--english-lavender) !important;
 }
 
 h1{
@@ -36,26 +56,22 @@ h1{
   color: var(--english-lavender)
 }
 .dark-text {
-  color: var(--lighter-raisin-black)
+  color: var(--raisin-black)
 }
 
-.footer {
+footer {
   bottom: 0;
   position: absolute;
 }
-@media (min-width: 992px) {
-  .fer {
-    width: 20vw;
+
+@media screen and (max-width: 480px) {
+  body{
+    font-size: 4.5vw;
+  }
+  .intro {
+    font-size: 3.5vw;
   }
 }
-@media (max-width: 992px) {
-  .fer {
-    width: 40vw;
-  }
-}
-@media (max-width: 768px) {
-  .fer {
-    width: 60vw;
-  }
-}
+
+
 

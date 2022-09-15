@@ -1,5 +1,5 @@
 import { Col, Card } from "react-bootstrap"
-import { StyledCard, CardTitle, CardText} from "../StyledComponents"
+import { StyledCard } from "../StyledComponents"
 export default function PreviewCard({src, title, description}) {
     return (
         <Col className="d-flex col-11 col-lg-3 col-md-6 px-3">
@@ -8,9 +8,9 @@ export default function PreviewCard({src, title, description}) {
               variant="top"
               src= {src}
             />
-            <Card.Body className="p-0 py-3">
-              <CardTitle className="fw-bold">{title}</CardTitle>
-              <CardText>{description}</CardText>
+            <Card.Body className="p-0 text-center py-3">
+              <Card.Title className="fw-bold">{title}</Card.Title>
+              <Card.Text>{description}</Card.Text>
             </Card.Body>
           </StyledCard>
         </Col>

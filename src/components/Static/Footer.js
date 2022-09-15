@@ -1,18 +1,23 @@
-import { Container, Row, Col } from "react-bootstrap";
 export default function Footer() {
   return (
-    <Container className="footer border-top py-2" fluid>
-      <Row className="d-flex px-md-5 mx-md-5 align-items-center">
-        <Col className="col-4  d-flex gap-2 gap-md-3">
+    <footer class="d-flex border-top px-5 py-2 justify-content-between align-items-center container-fluid">
+      <div class="d-flex pt-2 gap-3 ms-md-4">
+        <a href='https://www.instagram.com/fernanda.blaise/' target='_blank' rel="noreferrer">
           <i className="bi bi-instagram fs-4 pink"></i>
+        </a>
+        <a href='https://www.twitch.tv/redfuryrose' target='_blank' rel="noreferrer">
           <i className="bi bi-twitch fs-4 pink"></i>
-          <i className="bi bi-github fs-4 pink"></i>
+        </a>
+        <a href='https://github.com/MFAlonzoSalazar' target='_blank' rel="noreferrer">
+          <i className="bi bi-github fs-4 pink "></i>
+        </a>
+        <a href='https://www.linkedin.com/' target='_blank' rel="noreferrer">
           <i className="bi bi-linkedin fs-4 pink"></i>
-        </Col>
-        <Col className="col-8  text-end">
-            <div class='fs-5 fw-bold pink'> &copy; Fernanda Blaise 2022 </div> 
-        </Col>
-      </Row>
-    </Container>
+        </a>
+      </div>
+      <div class="align-items-center mx-md-3 pink serious fw-bold">
+        &copy; Fernanda Blaise 2022
+      </div>
+    </footer>
   );
 }

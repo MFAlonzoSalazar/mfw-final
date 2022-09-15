@@ -12,6 +12,7 @@ const themes = {
         headerText: '#2D2D34',
         text: '#2D2D34',
         cardBg: '#D2A9AF',
+        cardText: '#2D2D34',
         shadow: '#785D64',
         shadowContrast:'#CDA0A7'
 
@@ -21,9 +22,10 @@ const themes = {
         contrast: '#B18188',
         border: '#9E757C',
         hover: '#D6B1B6',
-        headerText: '#403940',
+        headerText: '#000',
         text: '#EAD6D9',
         cardBg: '#B18188',
+        cardText: '#000',
         shadow: '#000',
         shadowContrast:'#CDA0A7'
     }
@@ -53,7 +55,7 @@ export const StyledNavBar = styled(Navbar)`
 `
 export const StyledLink = styled(NavLink)`
     text-decoration: none;
-    font-weight: normal;
+    font-weight: 500;
     ${({theme: {theme}})=> `
         color:  ${themes[theme].headerText};
         &:hover {
@@ -69,8 +71,6 @@ export const StyledLink = styled(NavLink)`
 
 export const StyledIcon = styled.i`
     ${({theme: {theme}})=> `
-        width: 100%;
-        height: 100%;
         color:  ${themes[theme].headerText};
         &:hover {
             color: ${themes[theme].hover};
@@ -102,23 +102,14 @@ export const PinkText = styled.p`
 export const StyledCard = styled(Card)`
     ${({theme: {theme}})=> `
         background-color: ${themes[theme].cardBg}; 
-        color:  ${themes[theme].text};
+        color:  ${themes[theme].cardText};
         &:hover {
             transform: scale(1.1);
             box-shadow: 5px 8px 10px 1px ${themes[theme].shadow};
         }
     `}
 `
-export const CardText = styled(Card.Text)`
-    ${({theme: {theme}})=> `
-    color:  ${themes[theme].headerText};
-    `}
-`
-export const CardTitle = styled(Card.Title)`
-    ${({theme: {theme}})=> `
-    color:  ${themes[theme].headerText};
-    `}
-`
+
 export const AppBackground = styled.div`
     position: relative;
     min-height: 100vh;

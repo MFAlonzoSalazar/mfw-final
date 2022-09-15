@@ -11,9 +11,9 @@ export default function Header() {
     return(
         <StyledNavBar expand="md">
             <Container className="px-md-5" fluid>
-                <Navbar.Brand>
+                <Navbar.Brand class='col-8 col-md-2'>
                     <NavLink className='Links' to='/'>
-                        <Image src={process.env.PUBLIC_URL + '/images/logo.png'} className='img-fluid' alt='Fernanda Blaise Logo'/>
+                        <Image src={process.env.PUBLIC_URL + '/images/logo.png'} className='headerLogo' alt='Fernanda Blaise Logo'/>
                     </NavLink>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -31,7 +31,7 @@ export default function Header() {
                         <Nav.Link>
                             <MyNavLink route="/contactme" label="Contact Me"/>
                         </Nav.Link>
-                        <ResumeLink className="Links" href={process.env.PUBLIC_URL + '/files/FernandaBlaiseResume.pdf'} target="_blank">
+                        <ResumeLink className="Links serious" href={process.env.PUBLIC_URL + '/files/FernandaBlaiseResume.pdf'} target="_blank">
                             Resume
                         </ResumeLink>                        
                         <ThemeToggle />

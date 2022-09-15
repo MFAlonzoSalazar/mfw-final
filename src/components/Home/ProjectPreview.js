@@ -2,7 +2,7 @@ import { Row } from "react-bootstrap";
 import PreviewCard from "./PreviewCard";
 export default function ProjectPreview() {
   return (
-    <Row className="d-flex justify-content-center py-5">
+    <Row className="serious d-flex justify-content-center py-5">
       <Row>
         <h1 className="pt-5"> Project Preview </h1>
       </Row>
