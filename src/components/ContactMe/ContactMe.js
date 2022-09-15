@@ -13,7 +13,7 @@ export default function ContactMe() {
   };
   return (
     <Container className="p-5">
-      <h1 className="pt-md-5 mt-md-5">Get In Touch</h1>
+      <h1 className="pt-md-5">Get In Touch</h1>
       <StyledText className="pt-4">
         Send me a message if you want to work together or if you just want to
         say hi!
@@ -27,14 +27,15 @@ export default function ContactMe() {
         class="form-floating pb-5 dark-text"
         id="contactForm"
         onSubmit={handleSubmit}
+        className='dark-text'
       >
         {/* honeypot */}
         <input type="text" name="_honey" style={{ display: "none" }} />
         {/* disble captcha */}
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value='https://mfalonzosalazar.github.io/mfw-final/#/success'/>
-        <Row className="g-2 py-2">
-          <Col>
+        <Row className="g-2 pb-3">
+          <Col className='col-12 col-sm-6'>
             <FloatingLabel controlId="floatingInputGrid" label="First Name">
               <Form.Control
                 type="text"
@@ -44,7 +45,7 @@ export default function ContactMe() {
               />
             </FloatingLabel>
           </Col>
-          <Col>
+          <Col className='col-12 col-sm-6'>
             <FloatingLabel controlId="floatingInputGrid" label="Last Name">
               <Form.Control
                 type="text"
@@ -58,7 +59,7 @@ export default function ContactMe() {
         <FloatingLabel
           controlId="floatingEmail"
           label="Your Email address"
-          className="mb-3"
+          className='pb-3'
         >
           <Form.Control
             type="email"
@@ -67,7 +68,7 @@ export default function ContactMe() {
             required
           />
         </FloatingLabel>
-        <FloatingLabel controlId="floatingTextarea2" label="Message">
+        <FloatingLabel controlId="floatingTextarea" label="Message">
           <Form.Control
             as="textarea"
             name="Message"
