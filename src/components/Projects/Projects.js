@@ -67,7 +67,7 @@ export default function Projects() {
         <div className="projectText bg-primary p-1 p-md-3 mt-2 mb-4 rounded-3 shadow dark-text">
         <h6 className="pt-1">
             <StyledA
-              href="https://mfalonzosalazar.github.io/react_final_proj/"
+              href="https://mfalonzosalazar.github.io/movie_app_take_home/"
               target="_blank"
               className="fw-bolder"
             >
