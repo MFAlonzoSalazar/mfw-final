@@ -4,8 +4,7 @@ export default function Projects() {
   return (
     <Container className="text-center p-5" fluid>
       <StyledText>
-        {" "}
-        To check out the websited please click on the bolded names
+        To check out the websited please click on the bolded names 
       </StyledText>
       <Container className="projectSection p-md-5">
         <Image
