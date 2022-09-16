@@ -9,7 +9,7 @@ export default function Projects() {
       <Container className="projectSection p-md-5">
         <Image
           className="projectImg d-block p-md-2 border border-4"
-          src={process.env.PUBLIC_URL + "/images/EventPage.png"}
+          src={process.env.PUBLIC_URL + "/images/Fakestore.png"}
           alt="First slide"
           thumbnail
         />
