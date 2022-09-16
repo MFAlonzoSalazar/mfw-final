@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
-import { StyledNavBar, ResumeLink } from '../StyledComponents';
+import { StyledNavBar, StyledA } from '../StyledComponents';
 import MyNavLink from './MyNavLink';
 import ThemeToggle from './ThemeToggle';
 import { NavLink } from 'react-router-dom';
@@ -31,9 +31,9 @@ export default function Header() {
                         <Nav.Link>
                             <MyNavLink route="/contactme" label="Contact Me"/>
                         </Nav.Link>
-                        <ResumeLink className="Links serious" href={process.env.PUBLIC_URL + '/files/FernandaBlaiseResume.pdf'} target="_blank">
+                        <StyledA className="Links serious" href={process.env.PUBLIC_URL + '/files/FernandaBlaiseResume.pdf'} target="_blank">
                             Resume
-                        </ResumeLink>                        
+                        </StyledA>                        
                         <ThemeToggle />
                     </Nav>
                 </Navbar.Collapse>

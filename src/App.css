@@ -68,6 +68,31 @@ footer {
     font-size: 3.5vw;
   }
 }
+@media screen and (max-width: 992px) {
+  .projectImg {
+    width: 100%
+  }
+  .projectText {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .projectSection {
+    position: relative;
+  }
+  .projectImg {
+    width: 70%;
+  }
+  .projectText{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 50%;
+  }
+}
+
+
 
 .wave {
   animation-name: wave-animation;  
@@ -78,13 +103,13 @@ footer {
 }
 @keyframes wave-animation {
   0% { transform: rotate( 0.0deg) }
- 10% { transform: rotate(20.0deg) } 
- 20% { transform: rotate(-10.0deg)}
- 30% { transform: rotate(20.0deg) }
- 40% { transform: rotate(-5.0deg) }
- 50% { transform: rotate(10.0deg) }
- 60% { transform: rotate( 0.0deg) }  
-100% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(20.0deg) } 
+  20% { transform: rotate(-10.0deg)}
+  30% { transform: rotate(20.0deg) }
+  40% { transform: rotate(-5.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
 }
 
 

@@ -79,7 +79,7 @@ export const StyledIcon = styled.i`
         }
     `}
 `
-export const ResumeLink = styled.a`
+export const StyledA = styled.a`
     text-decoration: none;
     font-weight: normal;
     ${({theme: {theme}})=> `
@@ -125,6 +125,26 @@ export const StyledButton = styled.button`
         color: ${themes[theme].text};
         border: 1px solid ${themes[theme].border} !important;
         background: ${themes[theme].contrast} !important; 
+        &:hover{
+            box-shadow: inset 0 0 5px ${themes[theme].shadow} !important;
+        }
+        &:active {
+            background: ${themes[theme].shadowContrast} !important;
+            box-shadow: inset 0 0 5px ${themes[theme].shadow} !important;
+        }
+    `}
+`
+export const StyledProjectsButton = styled.button`
+    border-radius: 6px;
+    width:100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    ${({theme: {theme}})=> `
+        color: ${themes[theme].text};
+        border: 1px solid ${themes[theme].border} !important;
+        background: ${themes[theme].bg} !important; 
         &:hover{
             box-shadow: inset 0 0 5px ${themes[theme].shadow} !important;
         }
