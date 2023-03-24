@@ -16,10 +16,9 @@ export default function AboutMe() {
         </StyledText>
         <StyledText>
           After college, my interest in websites grew, and that led me to enroll
-          in a Bitwise React course. I am currently taking their Mobile Friendly
-          Websites course and will take their Javascript course as well. I hope
-          to continue learning more about web/app development, and to continue
-          growing into a full stack developer
+          in Bitwise courses. I took their Mobile Friendly, Javascript, and React
+          Websites courses. I hope to continue learning more about web/app development, 
+          and to continue growing into a full stack developer
         </StyledText>
       </Row>
       <Row className="py-5 px-5 border-top">
