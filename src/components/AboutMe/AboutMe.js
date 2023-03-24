@@ -24,12 +24,11 @@ export default function AboutMe() {
       </Row>
       <Row className="py-5 px-5 border-top">
         <h1 className="pt-3 serious">Work</h1>
-        <StyledText className="py-3">
-            I do not currently have any work experience in the software engineering
-            or web dev field.
+        <StyledText>
+            <b>October 2022 - Present : TA for Bitwise Industries</b>
         </StyledText>
         <StyledText>
-            2014-2021: Smiles and Teeth Dental Office :
+            <b>2014-2021: Smiles and Teeth Dental Office :</b>
         </StyledText>
         <StyledText>Responsibilities:</StyledText>
         <ol className="px-5">

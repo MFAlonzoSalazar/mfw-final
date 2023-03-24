@@ -56,7 +56,7 @@ export default function Projects() {
         </div>
       </Container>
 
-      <Container className="projectSection p-md-5">
+      {/* <Container className="projectSection p-md-5">
         <Image
           className="projectImg d-block p-md-2 border border-4"
           src={process.env.PUBLIC_URL + "/images/MovieSearch.png"}
@@ -79,7 +79,7 @@ export default function Projects() {
             IMDB that match up to that name.
           </StyledText>
         </div>
-      </Container>
+      </Container> */}
 
       <Container className="projectSection p-md-5 mb-5">
         <Image

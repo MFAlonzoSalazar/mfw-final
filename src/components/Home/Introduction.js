@@ -4,10 +4,9 @@ export default function Introduction() {
     <Row className="align-items-center pb-5 pt-md-5 border-bottom">
       <Col className="d-flex col-12 col-md-4 py-5 justify-content-center">
         <Image
-          className="p-3 border border-4  "
+          className="p-3 border border-4"
           src={process.env.PUBLIC_URL + "/images/FER.jpg"}
           alt="Fernanda Blaise Picture"
-          fluid
           thumbnail
           roundedCircle
         />
