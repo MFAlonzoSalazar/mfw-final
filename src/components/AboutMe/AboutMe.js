@@ -26,22 +26,34 @@ export default function AboutMe() {
         <StyledText>
             <b>October 2022 - Present : TA for Bitwise Industries</b>
         </StyledText>
+        <StyledText>Responsibilities:</StyledText>
+        <ol className="px-5">
+            <li>
+              Provided one-on-one assistance to struggling students
+            </li>
+            <li>
+              Aided in both teacher and student success
+            </li>
+            <li>
+              Monitored and recorded attendance  
+            </li>
+        </ol>
         <StyledText>
             <b>2014-2021: Smiles and Teeth Dental Office :</b>
         </StyledText>
         <StyledText>Responsibilities:</StyledText>
         <ol className="px-5">
             <li>
-                Set up office network wiring and network sharing
+              Set up office network wiring and network sharing
             </li>
             <li>
-                Created office forms in Word and Adobe Acrobat   
+              Created office forms in Word and Adobe Acrobat   
             </li>
             <li>
-                Created patient files and billed insurances (e-claims) using Open Dental Software     
+              Created patient files and billed insurances (e-claims) using Open Dental Software     
             </li>
             <li>
-                Kept the System and Network up and running
+              Kept the System and Network up and running
             </li>
         </ol>
       </Row>

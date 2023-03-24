@@ -17,11 +17,11 @@ export default function ProjectPreview() {
           title='Event Page'
           description='Moqup of an event page'
         />
-        <PreviewCard 
+        {/* <PreviewCard 
           src={process.env.PUBLIC_URL + "/images/MovieSearch.png"}
           title='MovieSearch'
           description='Searches for Movies on IMDB'
-        />
+        /> */}
         <PreviewCard 
           src={process.env.PUBLIC_URL + "/images/ComingSoon.png"}
           title='Jewelry Store'
